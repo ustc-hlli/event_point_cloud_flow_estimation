@@ -52,5 +52,18 @@ python my_test.py --config configs/test_mvsec_cfg.yaml
 The pretrained models are in `./pretrain`.
 
 ## Training
+Similarly, first set the `data_root` term in `./configs/train_dsec_cfg.yaml` and `./configs/train_mvsec_cfg.yaml` as the paths to the processed DSEC and MVSEC datasets.
+
+To train on DSEC, run the following command.
+```
+python my_train.py --config configs/train_dsec_cfg.yaml
+```
+
+To train on MVSEC, run the following command.
+```
+python my_train.py --config configs/train_mvsec_cfg.yaml
+```
+
+The logs and checkpoints will be saved in `./experiments/exp_name`
 
 ## Acknowledgement
