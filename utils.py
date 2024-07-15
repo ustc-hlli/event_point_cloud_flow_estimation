@@ -139,7 +139,7 @@ def disp_to_pc(disp, mask, trans_mar=np.array([[1.0, 0.0, 0.0, -335.099987030029
 
 def stream_to_voxel(stream, size=[], nbin=15, normalize=True):
     '''
-    from DSEC.
+    Borrowed from DSEC.
     https://github.com/uzh-rpg/DSEC/tree/main/scripts/dataset
     
     '''
