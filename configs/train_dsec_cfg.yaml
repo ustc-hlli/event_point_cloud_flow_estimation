@@ -1,0 +1,29 @@
+model_name: PE_Flow
+exp_name: dsec_train
+
+# general args
+multi_gpu: True
+batch_size: 8
+epochs: 500
+init_epoch: 0
+learning_rate: 0.0004
+weight_decay: 0.00005
+op_loss_weight: 1.0
+
+optimizer: AdamW
+milestones: [400]
+pretrain:  #
+
+evaluate: False
+
+# data agrs
+dataset: DSEC
+data_root: #
+
+npoint: 8192
+nbin: 15
+size: [480, 640]
+
+# model args
+train_iter: 4
+eval_iter: 5

@@ -1,0 +1,29 @@
+model_name: PE_Flow
+exp_name: mvsec_train
+
+# general args
+multi_gpu: True
+batch_size: 8
+epochs: 100 
+init_epoch: 0
+learning_rate: 0.0004
+weight_decay: 0.00005
+op_loss_weight: 0.5 
+
+optimizer: AdamW
+milestones: [10000] # no decay
+pretrain: #
+
+evaluate: False
+
+# data agrs
+dataset: MVSEC
+data_root: #
+
+npoint: 8192
+nbin: 15
+size: [264, 352] #[260, 346]
+
+# model args
+train_iter: 6
+eval_iter: 7
