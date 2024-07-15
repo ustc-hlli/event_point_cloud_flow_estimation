@@ -138,6 +138,12 @@ def disp_to_pc(disp, mask, trans_mar=np.array([[1.0, 0.0, 0.0, -335.099987030029
     return points
 
 def stream_to_voxel(stream, size=[], nbin=15, normalize=True):
+    '''
+    from DSEC.
+    https://github.com/uzh-rpg/DSEC/tree/main/scripts/dataset
+    
+    '''
+     
     t_norm = (nbin - 1) * (stream['t']-stream['t'].min()) / (stream['t'].max() - stream['t'].min())
     
     with torch.no_grad():
