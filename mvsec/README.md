@@ -9,7 +9,9 @@ Run `compute_velocity.py` as follows:
 ```
 python compute_velocity.py --mvsec_root MVSEC_ROOT --output OUTPUT
 ```
+
 Prameters:
+
 `--mvsec_root`: the root to the MVSEC ros bag files (e.g. `outdoor_day1_gt.bag` and `outdoor_day2_gt.bag`).
 
 `--output`: the path to save the computed velocity files.
