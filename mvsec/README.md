@@ -6,7 +6,7 @@ The code requires the rosbag library. Alternatively, you can directly use the co
 ## Usage
 Run `compute_velocity.py` as follows:
 ```
-compute_velocity.py [-h] --mvsec_root MVSEC_ROOT --output OUTPUT
+python compute_velocity.py --mvsec_root MVSEC_ROOT --output OUTPUT
 ```
 Prameters:
 `--mvsec_root`: the root to the MVSEC ros bag files (e.g. `outdoor_day1_gt.bag` and `outdoor_day2_gt.bag`).
