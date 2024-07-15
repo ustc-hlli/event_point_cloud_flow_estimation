@@ -2,7 +2,7 @@ Compute the velocity files of the MVSEC dataset.
 
 The code is borrowed from [MVSEC](https://github.com/daniilidis-group/mvsec/tree/master/tools/gt_flow).
 
-The code requires the rosbag library. Alternatively, you can directly use the computed velocity files in `./computed`. Copy them to the path of the MVSEC dataset(`MVSEC_ROOT`) before generating the scene flow and optical flow annotations.
+The code requires the rosbag library. Alternatively, you can directly use the computed velocity files in `./computed`. Copy them to the path of the MVSEC dataset (`MVSEC_ROOT`) before generating the scene flow and optical flow annotations.
 
 ## Usage
 Run `compute_velocity.py` as follows.
