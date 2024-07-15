@@ -67,3 +67,22 @@ python my_train.py --config configs/train_mvsec_cfg.yaml
 The logs and checkpoints will be saved in `./experiments/exp_name`
 
 ## Acknowledgement
+The PointNet2 cpp lib is from the [repository](https://github.com/sshaoshuai/Pointnet2.PyTorch).
+
+Besides, our work is based on the following repositories:
+
+*[flownet3d_pytorch](https://github.com/hyangwinter/flownet3d_pytorch)
+
+*[PointPWC-Net](https://github.com/DylanWusee/PointPWC)
+
+*[FlowStep3D](https://github.com/yairkit/flowstep3d)
+
+*[RPPformer-Flow](https://github.com/ustc-hlli/RPPformer-Flow)
+
+*[E-RAFT](https://github.com/uzh-rpg/E-RAFT)
+
+*[DSEC](https://github.com/uzh-rpg/DSEC/tree/main)
+
+*[MVSEC](https://github.com/daniilidis-group/mvsec/tree/master)
+
+Sincere thanks for their excellent work!
