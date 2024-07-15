@@ -303,8 +303,8 @@ parser.add_argument('--output', required=True,
                     help='Output path')
 par_arg = parser.parse_args()
 
-root = par_arg.mvsec_root #'/gdata2/lihl/mvsec'
-save_dir = os.path.join(par_arg.output, 'Processed_Scene_Flow_New_Rect3') #'/gdata2/lihl/mvsec/Processed_Scene_Flow_New_Rect3'
+root = par_arg.mvsec_root
+save_dir = os.path.join(par_arg.output, 'Processed_Scene_Flow_New_Rect3')
 seqs = ['outdoor_day1', 'outdoor_day2']
 nsep = 1
 
