@@ -105,7 +105,6 @@ def compute_scene_flow(disp1, disp2, disp_mask1, disp_mask2, op_flow, flow_mask,
     inter_inverse_disp1 = img_bilinear_interpolate(new_xy1, inverse_dips1, inverse_disp2, mask1, mask2) #[v_t, 1], [v_t]
     #inter_inverse_disp1 = img_nearest_interpolate(new_xy1, inverse_dips1, inverse_disp2, mask1, mask2) #[v_t, 1], [v_t]
     exten_disp1 = (disp1[mask1])[:, None]
-    #inter_disp1 = np.where(mask1, 1.0/inter_inverse_disp1, disp1)
     inter_disp1 = np.where(inter_inverse_disp1 > 0, 1.0/inter_inverse_disp1, 0.0)
     inter_xy1_disp1 = np.concatenate([new_xy1[mask1], inter_disp1], axis=1) #[v_t, 3] (x, y, d)
     xy1_disp1 = np.concatenate([xy1[mask1], exten_disp1], axis=1) #[v_t, 3] (x, y, d)
