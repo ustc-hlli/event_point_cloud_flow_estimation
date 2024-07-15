@@ -35,6 +35,22 @@ Copy them to the path of the MVSEC dataset (`MVSEC_ROOT`) and then run `data_mvs
 python data_mvsec.py --mvsec_root MVSEC_ROOT --output MVSEC_OUTPUT
 ```
 The processed MVSEC dataset is stored in `MVSEC_OUTPUT`.
+
 ## Evaluation
+When the datasets are ready, set the `data_root` term in `./configs/test_dsec_cfg.yaml` and `./configs/test_mvsec_cfg.yaml` as the paths to the processed DSEC and MVSEC datasets.
+
+To evaluate on DSEC, run the following command.
+```
+python my_test.py --config configs/test_dsec_cfg.yaml
+```
+
+To evaluate on MVSEC, run the following command.
+```
+python my_test.py --config configs/test_mvsec_cfg.yaml
+```
+
+The pretrained models are in `./pretrain`.
+
 ## Training
+
 ## Acknowledgement
