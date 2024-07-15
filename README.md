@@ -26,10 +26,15 @@ The corresponding code is in `./mvsec`. Run `compute_velocity.py` as follows.
 ```
 cd mvsec
 python compute_velocity.py --mvsec_root MVSEC_ROOT --output VELOCITY_OUTPUT
+cd ..
 ```
 Note that the code requires the rosbag library. Alternatively, you can directly use the computed velocity files in `./mvsec/computed`.
 
-Copy them to the 
+Copy them to the path of the MVSEC dataset (`MVSEC_ROOT`) and then run `data_mvsec.py` to process the dataset.
+```
+python data_mvsec.py --mvsec_root MVSEC_ROOT --output MVSEC_OUTPUT
+```
+The processed MVSEC dataset is stored in `MVSEC_OUTPUT`.
 ## Evaluation
 ## Training
 ## Acknowledgement
