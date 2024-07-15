@@ -53,8 +53,8 @@ parser.add_argument('--output', required=True,
                     help='Output path')
 par_arg = parser.parse_args()
 
-root = par_arg.mvsec_root #'D:\\AI\\visual\\mv' par_arg.mvsec_root
-save_dir = par_arg.output #'F:\\mvsec' par_arg.output
+root = par_arg.mvsec_root 
+save_dir = par_arg.output 
 seqs = ['outdoor_day1', 'outdoor_day2']
 
 for seq in seqs:
