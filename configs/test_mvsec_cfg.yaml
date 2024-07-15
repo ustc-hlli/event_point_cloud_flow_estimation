@@ -1,0 +1,19 @@
+model_name: PE_Flow
+exp_name: test
+
+# general args
+batch_size: 1
+pretrain: pretrain/mvsec.pth
+evaluate: True
+
+# data agrs
+dataset: MVSEC
+data_root: /gdata2/lihl/mvsec
+
+npoint: 8192
+nbin: 15
+size: [264, 352] #[260, 346]
+
+# model args
+train_iter: 6
+eval_iter: 7
